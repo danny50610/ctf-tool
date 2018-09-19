@@ -1,6 +1,34 @@
 <template>
     <div>
-        <h1>Test</h1>
+        <div class="row">
+            <div class="col-8">
+                <h2>輸入</h2>
+                <textarea class="form-control" rows="5" style="min-height: 100px; font-family:monospace;"></textarea>
+                <hr/>
+                <h2>輸出</h2>
+                <textarea class="form-control mb-2" rows="5" style="min-height: 100px; font-family:monospace;"
+                          readonly></textarea>
+                <div class="float-right">
+                    <button type="button" class="btn btn-outline-dark">
+                        <font-awesome-icon icon="copy"/>
+                        複製到輸入
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <h2>方法</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-success btn-block">
+                            Base64 Encode
+                        </button>
+                        <button type="button" class="btn btn-danger btn-block">
+                            Base64 Decode
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
