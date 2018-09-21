@@ -25,6 +25,21 @@
                         <button type="button" class="btn btn-danger btn-block">
                             Base64 Decode
                         </button>
+                        <button type="button" class="btn btn-success btn-block">
+                            URL Encode
+                        </button>
+                        <button type="button" class="btn btn-danger btn-block">
+                            URL Decode
+                        </button>
+                        <button type="button" class="btn btn-info btn-block">
+                            MD5
+                        </button>
+                        <button type="button" class="btn btn-info btn-block">
+                            SHA1
+                        </button>
+                        <button type="button" class="btn btn-info btn-block">
+                            SHA256
+                        </button>
                     </div>
                 </div>
             </div>
