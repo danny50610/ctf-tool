@@ -23,7 +23,7 @@
   },
   "build": {
     "productName": "ctf-tool",
-    "appId": "com.example.yourapp",
+    "appId": "tw.illya.cty-tool",
     "directories": {
       "output": "build"
     },
@@ -49,7 +49,8 @@
       "icon": "build/icons/icon.icns"
     },
     "win": {
-      "icon": "build/icons/icon.ico"
+      "icon": "build/icons/icon.ico",
+	  "target": ["nsis", "zip"]
     },
     "linux": {
       "icon": "build/icons"
