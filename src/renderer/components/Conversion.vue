@@ -47,9 +47,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Conversion',
-  };
+    export default {
+        name: 'Conversion',
+    };
 </script>
 
 <style scoped>
