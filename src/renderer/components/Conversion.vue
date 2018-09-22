@@ -3,11 +3,10 @@
         <div class="row">
             <div class="col-8">
                 <h2>輸入</h2>
-                <textarea class="form-control" rows="5" style="min-height: 100px; font-family:monospace;"></textarea>
+                <textarea class="form-control" rows="5"></textarea>
                 <hr/>
                 <h2>輸出</h2>
-                <textarea class="form-control mb-2" rows="5" style="min-height: 100px; font-family:monospace;"
-                          readonly></textarea>
+                <textarea class="form-control mb-2" rows="5" readonly></textarea>
                 <div class="float-right">
                     <button type="button" class="btn btn-outline-dark">
                         <font-awesome-icon icon="copy"/>
@@ -54,5 +53,8 @@
 </script>
 
 <style scoped>
-
+    textarea {
+        min-height: 100px;
+        font-family: monospace;
+    }
 </style>
