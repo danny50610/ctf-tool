@@ -2,8 +2,8 @@
   "name": "ctf-tool",
   "version": "0.0.1",
   "author": "Chan, Danny <danny50610@yahoo.com.tw>",
-  "description": "An electron-vue project",
-  "license": null,
+  "description": "A basic ctf tool.",
+  "license": "SEE LICENSE IN LICENSE",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
