@@ -73,12 +73,10 @@
                 this.outputData = Base64.decode(this.inputData);
             },
             urlEncode() {
-                // TODO:
-                this.outputData = this.inputData;
+                this.outputData = encodeURIComponent(this.inputData);
             },
             urlDecode() {
-                // TODO:
-                this.outputData = this.inputData;
+                this.outputData = decodeURIComponent(this.inputData);
             },
             md5() {
                 this.outputData = new Hashes.MD5().hex(this.inputData);
