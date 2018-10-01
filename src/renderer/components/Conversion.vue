@@ -8,7 +8,7 @@
                 <h2>輸出</h2>
                 <textarea class="form-control mb-2" rows="5" v-model="outputData" id="outputTextarea" readonly></textarea>
                 <div class="float-right">
-                    <button type="button" class="btn btn-outline-dark">
+                    <button type="button" class="btn btn-outline-dark" @click="copyToInput()">
                         <font-awesome-icon icon="copy"/>
                         複製到輸入
                     </button>
@@ -86,6 +86,9 @@
             },
             sha256() {
                 this.outputData = new Hashes.SHA256().hex(this.inputData);
+            },
+            copyToInput() {
+                this.inputData = this.outputData;
             },
         },
     };
