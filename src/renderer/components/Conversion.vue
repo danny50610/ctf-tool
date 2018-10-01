@@ -54,6 +54,7 @@
 </template>
 
 <script>
+    import { Base64 } from 'js-base64';
     const Hashes = require('jshashes');
 
     export default {
@@ -66,12 +67,10 @@
         },
         methods: {
             base64Encode() {
-                // TODO:
-                this.outputData = this.inputData;
+                this.outputData = Base64.encode(this.inputData);
             },
             base64Decode() {
-                // TODO:
-                this.outputData = this.inputData;
+                this.outputData = Base64.decode(this.inputData);
             },
             urlEncode() {
                 // TODO:
