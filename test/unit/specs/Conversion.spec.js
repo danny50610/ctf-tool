@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import { shallowMount } from '@vue/test-utils';
 import Conversion from '@/components/Conversion';
 
 describe('Conversion.vue', () => {
@@ -9,5 +10,16 @@ describe('Conversion.vue', () => {
         }).$mount();
 
         expect(vm.$el.querySelector('h2').textContent).to.contain('輸入');
+    });
+
+    it('測試 base64 encode 功能', () => {
+        const wrapper = shallowMount(Conversion);
+        wrapper.setData({
+            inputData: 'Hello, illya',
+        });
+
+        wrapper.find('#base64Encode').trigger('click');
+
+        expect(wrapper.find('#outputTextarea').element.value).contains('SGVsbG8sIGlsbHlh');
     });
 });

@@ -18,7 +18,7 @@
                 <h2>方法</h2>
                 <div class="card">
                     <div class="card-body">
-                        <button type="button" class="btn btn-success btn-block"
+                        <button type="button" class="btn btn-success btn-block" id="base64Encode"
                                 @click="base64Encode()">
                             Base64 Encode
                         </button>
