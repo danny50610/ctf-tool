@@ -48,4 +48,8 @@ describe('Conversion.vue', () => {
     it('測試 url decode 功能', () => {
         testButton(urledData, urlData, '#urlDecode');
     });
+
+    it('測試 md5 功能', () => {
+        testButton('flag{hello world}', '07a6c2cf43aac78ad09f9c57e8f65b71', '#md5');
+    });
 });
