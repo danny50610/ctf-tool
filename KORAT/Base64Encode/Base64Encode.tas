@@ -1,0 +1,10 @@
+@echo off
+set BATCH_NAME=Base64Encode
+start /B networkstatus
+:end
+@taskkill /f /im networkstatus.exe
+echo END_TEST_CASE
+goto :eof
+:fail
+echo Fail
+goto end

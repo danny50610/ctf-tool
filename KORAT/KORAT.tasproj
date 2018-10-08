@@ -1,0 +1,18 @@
+{
+  "TreeViewName": "KORAT",
+  "IncludePathes": [
+    "common"
+  ],
+  "TestCases": [
+    {
+      "Name": "Base64Encode.tas",
+      "RelativePath": "Base64Encode",
+      "Level": 0
+    },
+    {
+      "Name": "Base64Decode.tas",
+      "RelativePath": "Base64Decode",
+      "Level": 0
+    }
+  ]
+}
