@@ -22,15 +22,15 @@
                                 @click="base64Encode()">
                             Base64 Encode
                         </button>
-                        <button type="button" class="btn btn-danger btn-block"
+                        <button type="button" class="btn btn-danger btn-block" id="base64Decode"
                                 @click="base64Decode()">
                             Base64 Decode
                         </button>
-                        <button type="button" class="btn btn-success btn-block"
+                        <button type="button" class="btn btn-success btn-block" id="urlEncode"
                                 @click="urlEncode()">
                             URL Encode
                         </button>
-                        <button type="button" class="btn btn-danger btn-block"
+                        <button type="button" class="btn btn-danger btn-block" id="urlDecode"
                                 @click="urlDecode()">
                             URL Decode
                         </button>
@@ -38,11 +38,11 @@
                                 @click="md5()">
                             MD5
                         </button>
-                        <button type="button" class="btn btn-info btn-block"
+                        <button type="button" class="btn btn-info btn-block" id="sha1"
                                 @click="sha1()">
                             SHA1
                         </button>
-                        <button type="button" class="btn btn-info btn-block"
+                        <button type="button" class="btn btn-info btn-block" id="sha256"
                                 @click="sha256()">
                             SHA256
                         </button>

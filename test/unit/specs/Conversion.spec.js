@@ -22,4 +22,15 @@ describe('Conversion.vue', () => {
 
         expect(wrapper.find('#outputTextarea').element.value).contains('SGVsbG8sIGlsbHlh');
     });
+
+    it('測試 base64 decode 功能', () => {
+        const wrapper = shallowMount(Conversion);
+        wrapper.setData({
+            inputData: 'SGVsbG8sIGlsbHlh',
+        });
+
+        wrapper.find('#base64Decode').trigger('click');
+
+        expect(wrapper.find('#outputTextarea').element.value).contains('Hello, illya');
+    });
 });
