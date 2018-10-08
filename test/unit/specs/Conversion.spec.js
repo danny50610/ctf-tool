@@ -52,4 +52,8 @@ describe('Conversion.vue', () => {
     it('測試 md5 功能', () => {
         testButton('flag{hello world}', '07a6c2cf43aac78ad09f9c57e8f65b71', '#md5');
     });
+
+    it('測試 sha1 功能', () => {
+        testButton('flag{hello world}', '6b089ebe5e4b5e3bd7c16cea452bf53ad581038b', '#sha1');
+    });
 });
