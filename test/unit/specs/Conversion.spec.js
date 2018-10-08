@@ -60,4 +60,20 @@ describe('Conversion.vue', () => {
     it('測試 sha256 功能', () => {
         testButton('flag{hello world}', '2b98d603ab9e80b087d5943ffd40424702b7a590929070cd51fd153e7a526ddf', '#sha256');
     });
+
+    it('測試複製到輸入功能', () => {
+        const wrapper = shallowMount(Conversion);
+        wrapper.setData({
+            inputData: urlData,
+        });
+
+        wrapper.find('#urlEncode')
+            .trigger('click');
+
+        wrapper.find('#copyToInput')
+            .trigger('click');
+
+        expect(wrapper.find('#inputTextarea').element.value)
+            .contains(urledData);
+    });
 });

@@ -8,7 +8,7 @@
                 <h2>輸出</h2>
                 <textarea class="form-control mb-2" rows="5" v-model="outputData" id="outputTextarea" readonly></textarea>
                 <div class="float-right">
-                    <button type="button" class="btn btn-outline-dark" @click="copyToInput()">
+                    <button type="button" class="btn btn-outline-dark" id="copyToInput" @click="copyToInput()">
                         <font-awesome-icon icon="copy"/>
                         複製到輸入
                     </button>
