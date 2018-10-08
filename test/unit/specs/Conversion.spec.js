@@ -14,30 +14,33 @@ describe('Conversion.vue', () => {
             .contain('輸入');
     });
 
+    const base64Data = 'Hello, illya';
+    const base64edData = 'SGVsbG8sIGlsbHlh';
+
     it('測試 base64 encode 功能', () => {
         const wrapper = shallowMount(Conversion);
         wrapper.setData({
-            inputData: 'Hello, illya',
+            inputData: base64Data,
         });
 
         wrapper.find('#base64Encode')
             .trigger('click');
 
         expect(wrapper.find('#outputTextarea').element.value)
-            .contains('SGVsbG8sIGlsbHlh');
+            .contains(base64edData);
     });
 
     it('測試 base64 decode 功能', () => {
         const wrapper = shallowMount(Conversion);
         wrapper.setData({
-            inputData: 'SGVsbG8sIGlsbHlh',
+            inputData: base64edData,
         });
 
         wrapper.find('#base64Decode')
             .trigger('click');
 
         expect(wrapper.find('#outputTextarea').element.value)
-            .contains('Hello, illya');
+            .contains(base64Data);
     });
 
     it('測試 url encode 功能', () => {
