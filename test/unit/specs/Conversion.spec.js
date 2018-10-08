@@ -56,4 +56,8 @@ describe('Conversion.vue', () => {
     it('測試 sha1 功能', () => {
         testButton('flag{hello world}', '6b089ebe5e4b5e3bd7c16cea452bf53ad581038b', '#sha1');
     });
+
+    it('測試 sha256 功能', () => {
+        testButton('flag{hello world}', '2b98d603ab9e80b087d5943ffd40424702b7a590929070cd51fd153e7a526ddf', '#sha256');
+    });
 });
