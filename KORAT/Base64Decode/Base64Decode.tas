@@ -1,9 +1,9 @@
 REM @echo off
 set BATCH_NAME=Base64Decode
 start /B networkstatus
-call "startup.func"
+call startup.func
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
-call "shutdown.func"
+call shutdown.func
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
 :end
 @taskkill /f /im networkstatus.exe
