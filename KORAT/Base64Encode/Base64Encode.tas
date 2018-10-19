@@ -2,12 +2,12 @@ REM @echo off
 set BATCH_NAME=Base64Encode
 start /B networkstatus
 call "startup.func"
-wait -t img -vlp test.png(TM(ccoeffnormed,0.95)) 3
+wait -t img -vlp input.png(TM(ccoeffnormed,0.95)) 3
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
-mouseoperation click test.png(TM(ccoeffnormed,0.95))
+mouseoperation click input.png(TM(ccoeffnormed,0.95))
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
-send "000.evt"
-send "001.evt"
+send "ctrl_space.evt"
+send "enter_hello.evt"
 wait -t img -vlp base64encode.png(TM(ccoeffnormed,0.95)) 3
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
 mouseoperation click base64encode.png(TM(ccoeffnormed,0.95))

@@ -1,8 +1,8 @@
 logrecorder function started startup.func
 start ""  "..\..\build\win-unpacked\ctf-tool.exe" 
-wait -t img -vlp test.png(TM(ccoeffnormed,0.95)) 5
+wait -t img -vlp input.png(TM(ccoeffnormed,0.95)) 5
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
-assert -t bgimg -vlp test.png(TM(ccoeffnormed,0.95)) -a n:1:t
+assert -t bgimg -vlp input.png(TM(ccoeffnormed,0.95)) -a n:1:t
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
 logrecorder function succeeded startup.func
 logrecorder function finished startup.func
