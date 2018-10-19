@@ -1,0 +1,9 @@
+logrecorder function started shutdown.func
+taskkill /f /im ctf-tool.exe
+logrecorder function succeeded shutdown.func
+logrecorder function finished shutdown.func
+exit /b 0
+:fail
+logrecorder function failed shutdown.func
+logrecorder function finished shutdown.func
+exit /b 1
