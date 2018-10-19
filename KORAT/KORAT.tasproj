@@ -13,6 +13,11 @@
       "Name": "Base64Decode.tas",
       "RelativePath": "Base64Decode",
       "Level": 0
+    },
+    {
+      "Name": "URLEncode.tas",
+      "RelativePath": "URLEncode",
+      "Level": 0
     }
   ]
 }
