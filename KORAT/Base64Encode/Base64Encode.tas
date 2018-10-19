@@ -1,7 +1,7 @@
-@echo off
+REM @echo off
 set BATCH_NAME=Base64Encode
 start /B networkstatus
-call startup.func
+call "startup.func"
 wait -t img -vlp test.png(TM(ccoeffnormed,0.95)) 3
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
 mouseoperation click test.png(TM(ccoeffnormed,0.95))
@@ -14,7 +14,7 @@ mouseoperation click base64encode.png(TM(ccoeffnormed,0.95))
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
 assert -t bgimg -vlp base64encode_output.png(TM(ccoeffnormed,0.95)) -a n:1:t
 @if %ERRORLEVEL%==0 (echo Success) else goto fail
-call shutdown.func
+call "shutdown.func"
 :end
 @taskkill /f /im networkstatus.exe
 echo END_TEST_CASE
