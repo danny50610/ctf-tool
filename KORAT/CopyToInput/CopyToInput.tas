@@ -1,0 +1,23 @@
+@echo off
+set BATCH_NAME=CopyToInput
+start /B networkstatus
+REM @echo off
+call startup.func
+wait -t img -vlp input.png(TM(ccoeffnormed,0.95)) 3
+@if %ERRORLEVEL%==0 (echo Success) else goto fail
+mouseoperation click input.png(TM(ccoeffnormed,0.95))
+@if %ERRORLEVEL%==0 (echo Success) else goto fail
+send "ctrl_space.evt"
+send "enter_hello.evt"
+mouseoperation click copy_to_input.png(TM(ccoeffnormed,0.95))
+@if %ERRORLEVEL%==0 (echo Success) else goto fail
+assert -t bgimg -vlp input.png(TM(ccoeffnormed,0.95)) -a n:1:t
+@if %ERRORLEVEL%==0 (echo Success) else goto fail
+call shutdown.func
+:end
+@taskkill /f /im networkstatus.exe
+echo END_TEST_CASE
+goto :eof
+:fail
+echo Fail
+goto end

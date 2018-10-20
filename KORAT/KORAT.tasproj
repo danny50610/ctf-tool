@@ -38,6 +38,11 @@
       "Name": "SHA256.tas",
       "RelativePath": "SHA256",
       "Level": 0
+    },
+    {
+      "Name": "CopyToInput.tas",
+      "RelativePath": "CopyToInput",
+      "Level": 0
     }
   ]
 }
