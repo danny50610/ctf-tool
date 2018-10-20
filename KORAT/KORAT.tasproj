@@ -33,6 +33,11 @@
       "Name": "SHA1.tas",
       "RelativePath": "SHA1",
       "Level": 0
+    },
+    {
+      "Name": "SHA256.tas",
+      "RelativePath": "SHA256",
+      "Level": 0
     }
   ]
 }
