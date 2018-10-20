@@ -28,6 +28,11 @@
       "Name": "MD5.tas",
       "RelativePath": "MD5",
       "Level": 0
+    },
+    {
+      "Name": "SHA1.tas",
+      "RelativePath": "SHA1",
+      "Level": 0
     }
   ]
 }

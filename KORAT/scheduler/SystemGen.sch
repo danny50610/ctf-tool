@@ -3,3 +3,4 @@ Base64Decode 1
 URLEncode 1
 URLDecode 1
 MD5 1
+SHA1 1
