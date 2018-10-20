@@ -18,6 +18,11 @@
       "Name": "URLEncode.tas",
       "RelativePath": "URLEncode",
       "Level": 0
+    },
+    {
+      "Name": "URLDecode.tas",
+      "RelativePath": "URLDecode",
+      "Level": 0
     }
   ]
 }
