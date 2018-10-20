@@ -23,6 +23,11 @@
       "Name": "URLDecode.tas",
       "RelativePath": "URLDecode",
       "Level": 0
+    },
+    {
+      "Name": "MD5.tas",
+      "RelativePath": "MD5",
+      "Level": 0
     }
   ]
 }
