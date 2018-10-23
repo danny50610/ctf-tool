@@ -2,6 +2,8 @@
 
 > An electron-vue project
 
+[![Build Status](https://travis-ci.org/danny50610/ctf-tool.svg?branch=master)](https://travis-ci.org/danny50610/ctf-tool)
+
 #### Build Setup
 
 ``` bash
