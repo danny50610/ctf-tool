@@ -1,8 +1,12 @@
 # ctf-tool
 
-> Simple CTF Tool
+> Simple CTF Tool  
+> 1071 Software Engineering Practices (SE6030) Final Project
 
 [![Build Status](https://travis-ci.org/danny50610/ctf-tool.svg?branch=master)](https://travis-ci.org/danny50610/ctf-tool)
+
+#### Screenshot
+![](screenshot.png)
 
 #### Build Setup
 
@@ -23,5 +27,3 @@ yarn test
 yarn run lint
 
 ```
-
----
