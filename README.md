@@ -1,6 +1,6 @@
 # ctf-tool
 
-> An electron-vue project
+> Simple CTF Tool
 
 [![Build Status](https://travis-ci.org/danny50610/ctf-tool.svg?branch=master)](https://travis-ci.org/danny50610/ctf-tool)
 
@@ -8,23 +8,20 @@
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:9080
-npm run dev
+yarn run dev
 
 # build electron application for production
-npm run build
+yarn run build
 
 # run unit & end-to-end tests
-npm test
-
+yarn test
 
 # lint all JS/Vue component files in `src/`
-npm run lint
+yarn run lint
 
 ```
 
 ---
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[80dc2ec](https://github.com/SimulatedGREG/electron-vue/tree/80dc2ece3425c558bfb2efbd57c3071e1b71be6d) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
